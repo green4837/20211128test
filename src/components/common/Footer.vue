@@ -10,16 +10,4 @@ export default{
 }
 </script>
 
-<style scoped>
-    footer{ z-index: 1;
-    width: calc(100% - 40px);
-    height: 75px;
-    line-height: 75px;
-    display: flex;
-    justify-content: center;
-    background: #000;
-    color: #fff;
-    font-size: 12px;
-    padding: 0 20px
-}
-</style>
+<style src="../../assets/common.css"></style>
