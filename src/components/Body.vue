@@ -35029,7 +35029,8 @@
             }
 
             .korea__article,.korea__banner {
-                position: relative
+                position: relative;
+                text-align: left
             }
 
             .korea__banner .korea__banner-newsis-logo {
@@ -35587,6 +35588,7 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                text-align: left;
                 padding: 0 2%
             }
 
@@ -35993,6 +35995,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    text-align: left;
                     padding: 0 2%
                 }
 
