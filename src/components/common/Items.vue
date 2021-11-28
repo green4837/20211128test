@@ -2,8 +2,8 @@
     <div class="korea__items">
         <div class="korea__item">
             <div class="korea__item-picture">
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-01-s.png" alt="" class="korea__item-picture-image"> 
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus">
+                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-01-s.png" alt="" class="glightbox"> 
+                <!-- <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus"> -->
             </div> 
             <div class="korea__item-box">
                 <img src="https://cache.wemixnetwork.com/wemix-event/newsis/every-where-korea-small-v.png" alt="" class="korea__item-logo"> 
@@ -30,8 +30,8 @@
                 <span class="korea__item-title">우리 땅 독도</span>
             </div> 
             <div class="korea__item-picture">
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-02-s.png" alt="" class="korea__item-picture-image"> 
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus">
+                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-02-s.png" alt="" class="glightbox"> 
+                <!-- <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus"> -->
             </div> 
             <div class="korea__item-wrapper">
                 <div class="korea__item-amount">
@@ -50,8 +50,8 @@
         </div> 
         <div class="korea__item">
             <div class="korea__item-picture">
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-03-s.png" alt="" class="korea__item-picture-image"> 
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus">
+                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-03-s.png" alt="" class="glightbox"> 
+                <!-- <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus"> -->
             </div> 
             <div class="korea__item-box">
                 <img src="https://cache.wemixnetwork.com/wemix-event/newsis/every-where-korea-small-v.png" alt="" class="korea__item-logo"> 
@@ -74,8 +74,8 @@
         </div> 
         <div class="korea__item">
             <div class="korea__item-picture">
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-04-s.png" alt="" class="korea__item-picture-image"> 
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus">
+                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-04-s.png" alt="" class="glightbox"> 
+                <!-- <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus"> -->
             </div> 
             <div class="korea__item-box">
                 <img src="https://cache.wemixnetwork.com/wemix-event/newsis/every-where-korea-small-v.png" alt="" class="korea__item-logo"> 
@@ -98,8 +98,8 @@
         </div> 
         <div class="korea__item">
             <div class="korea__item-picture">
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-05-s.png" alt="" class="korea__item-picture-image"> 
-                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus">
+                <img src="https://cache.wemixnetwork.com/wemix-event/newsis/img-section-05-s.png" alt="" class="glightbox"> 
+                <!-- <img src="https://cache.wemixnetwork.com/wemix-event/newsis/ico-plus.svg" alt="" class="korea__item-picture-plus"> -->
             </div> 
             <div class="korea__item-box">
                 <img src="https://cache.wemixnetwork.com/wemix-event/newsis/every-where-korea-small-v.png" alt="" class="korea__item-logo"> 
@@ -124,9 +124,16 @@
 </template>
 
 <script>
-export default{
 
+import "glightbox/dist/css/glightbox.css";
+import "glightbox/dist/js/glightbox.js";
+import GLightbox from 'glightbox';
+
+export default{
+    mounted(){ 
+        this.lightbox = GLightbox({ 
+            selector: ".glightbox"
+        });
+    }  
 }
 </script>
-
-<style src="../../assets/common.css"></style>

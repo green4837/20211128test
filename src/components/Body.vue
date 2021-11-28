@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Header from '../components/common/Header.vue'
+import Header from './common/Header.vue'
 import Article from './common/Article.vue'
 import Caution from './common/Caution.vue'
 
@@ -40,4 +40,3 @@ export default {
   }
 </script>
 
-<style src="../assets/common.css"></style>

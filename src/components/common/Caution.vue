@@ -21,5 +21,3 @@ export default{
 
 }
 </script>
-
-<style src="../../assets/common.css"></style>

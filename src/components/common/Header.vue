@@ -12,7 +12,7 @@
                 </div>
                 <div class="header__tool-auction">
                     <button type="button" color="#ee609c" class="button button-color--green go-to-auction">
-                    <span>위믹스 옥션 바로가기</span>
+                        <span>위믹스 옥션 바로가기</span>
                     </button>
                 </div>
             </div>
@@ -25,5 +25,3 @@ export default{
 
 }
 </script>
-
-<style src="../../assets/common.css"></style>

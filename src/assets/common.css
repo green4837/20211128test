@@ -18241,6 +18241,7 @@ button.swiper-pagination-bullet {
     }
 }
 
+
 .main-banner__container .swiper-pagination-bullet-active {
     opacity: 1;
     width: 60px;
@@ -19235,7 +19236,7 @@ h4 {
 
 p {
     font-size: 17px;
-    line-height: 25px;
+    line-height: 75px;
     padding: 0;
     margin: 0
 }
@@ -35341,11 +35342,13 @@ footer {
     }
 
     .m-korea__banner p {
+        display: flex;
+        grid-gap: 20px;
+        gap: 20px;
         font-size: 19px;
-        margin: 0 0 30px;
-        line-height: 38px;
-        word-break: keep-all;
-        max-width: 800px
+        flex-direction: column;
+        padding-top: 40px;
+        align-items: center
     }
 
     .m-korea__banner .m-korea__banner-date ul {
